@@ -1,0 +1,107 @@
+/* styles for Login.jsx */
+.login {
+  display: flex;
+  justify-content: center;
+}
+.inputForm {
+  margin-top: 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 7px;
+  -webkit-box-shadow: 10px 10px 49px -1px rgba(224, 224, 224, 1);
+  -moz-box-shadow: 10px 10px 49px -1px rgba(224, 224, 224, 1);
+  box-shadow: 10px 10px 49px -1px rgba(224, 224, 224, 1);
+}
+.emailInput,
+.passwordInput {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.passwordInput {
+  position: relative;
+}
+label {
+  width: 300px;
+  padding-right: 22px;
+  display: flex;
+  margin-bottom: 5px;
+}
+input {
+  width: 300px;
+  height: 40px;
+  padding: 7px;
+  padding-left: 15px;
+  font-size: 18px;
+  outline: none;
+  color: rgb(62, 62, 62);
+  border: 1px solid rgb(205, 205, 205);
+  border-radius: 4px;
+}
+input::placeholder {
+  color: rgb(175, 175, 175);
+}
+.note > p {
+  align-self: flex-start;
+  font-size: 12px;
+  margin: 0;
+  color: rgb(166, 166, 166);
+}
+.note {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+.visibility {
+  position: absolute;
+  cursor: pointer;
+  left: 285px;
+  top: 40px;
+  color: rgb(175, 175, 175);
+}
+.inputWarning {
+  border: 2px solid red;
+}
+.warning {
+  align-self: flex-start;
+  margin-top: 5px;
+  color: red;
+}
+.submitBtn {
+  color: white;
+  width: 200px;
+  padding: 10px;
+  font-size: 18px;
+  margin-top: 10px;
+  background-color: rgb(38, 182, 38);
+  border: none;
+  cursor: pointer;
+  -webkit-box-shadow: 10px 9px 6px -3px rgba(199, 199, 199, 1);
+  -moz-box-shadow: 10px 9px 6px -3px rgba(199, 199, 199, 1);
+  box-shadow: 10px 9px 6px -3px rgba(199, 199, 199, 1);
+}
+.submitBtn:hover {
+  background-color: orangered;
+  transition: all 0.3s;
+}
+@media (max-width: 471px) {
+  .inputForm {
+    padding: 10px;
+  }
+}
+@media (max-width: 370px) {
+  label,
+  input {
+    width: 250px;
+  }
+  .visibility {
+    left: 240px;
+  }
+}
